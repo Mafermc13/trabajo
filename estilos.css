@@ -1,0 +1,160 @@
+*{
+    box-sizing: border-box; 
+}
+
+body{
+    font-family: sans-serif;
+    margin: 0;
+}
+
+h1{ font-size: 3em;}
+h2{ font-size: 2em;}
+h3{ font-size: 2em;}
+p{ font-size: 1.25em;}
+ul{ list-style: none;}
+li{ font-size: 1.25;}
+
+button{ 
+    padding: 10px 20px;
+    font-size: 1.25em;
+    font-weight: bold;
+    border-radius: 10px;
+    border: 1px solid rgb(228, 29, 29);
+    color: white;
+    background-color: rgb(250, 133, 103);
+}
+
+button:hover{
+    background-color: rgb(245, 86, 68);
+}
+
+header{
+    background-color: bisque
+}
+
+.container{
+    max-width: 1000px;
+    margin: auto;
+}
+
+header .logo{
+    margin: 0;
+    padding: 25px 30px; 
+}
+
+header.container{
+    display: flex;
+    flex-direction: column;
+    align-items: right; 
+}
+
+header nav{
+    display: flex;
+    text-align: left;
+    padding-bottom: 25px;
+}
+ header a{
+     padding: 5px;
+     font-weight: bold;
+     color:black;
+     
+ }
+
+header a:hover{
+    color:rgb(250, 133, 103)
+}
+
+#hero{
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    display: flex;
+    height: 70vh;
+    color: white;
+    background-image: url("images/pexels-tirachard-kumtanom-574285.jpg");
+    background-size: cover;
+}
+
+#hero h1{
+    font-size: 4em;
+}
+
+section h2{
+    text-align: center;
+    padding: 150px, 12px;
+}
+
+#nuestros-talleres{
+    background-color: rgb(255, 143, 143); 
+    color: white;
+    text-align: center;
+}
+
+#nuestros-talleres .container{
+    padding: 100px 0px;
+}
+
+#nuestros-talleres .carta{
+    background-size: cover;
+    background-position: center center;
+    padding: 50px 0px;
+    margin: 40px;
+    border-radius: 20px;
+}
+
+.carta:first-child{
+    background-image: url("images/pexels-mart-production-8472950.jpg")
+    
+}
+
+.carta:nth-child(2){
+    background-image: url("images/pexels-andrea-piacquadio-3807755.jpg");
+
+}
+
+.carta:nth-child(3){
+    background-image: url("images/pexels-alexandr-podvalny-2781814.jpg");
+}
+
+#caracteristicas .container{
+    padding: 100px 12px;
+    text-align: center;
+}
+
+#caracteristicas li{
+    margin: 10px 0px;
+    font-weight: bold;
+    font-size: larger;
+    
+}
+
+#contáctame{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+footer{
+    background-color: rgb(238, 238, 238);
+}
+
+footer p{
+    margin: 0;
+    color: rgb(116, 111, 111)
+}
+
+footer .container{
+    height: 100px;
+    font-size: small;
+}
+
+@media (min-width: 720px){
+    header .container{
+        flex-direction: row;
+    }
+
+    header nav{
+        padding-bottom: 0;
+    }
+}
